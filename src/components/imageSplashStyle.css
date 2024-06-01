@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px){   
+    #startScreen{      
+        content:url("/SmartRouteScreen1.png");
+        margin-left: auto;
+        margin-right: auto;
+        height: 90vh;
+    } 
+    #splashContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}

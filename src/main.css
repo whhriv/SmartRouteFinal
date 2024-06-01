@@ -1,0 +1,196 @@
+.container {
+background-color: #0AC1F5 !important;
+}
+
+input {
+    background-color: #ffffff !important;
+    /* margin: '4px'; */
+    /* color: #A5F708 !important; */
+    border: black !important;
+    /* border-radius: 50%; */
+}
+/* success {
+    background-color: #A5F708 !important;
+    color: #08A5F7 !important */
+/* } */
+.btn-success {
+    background-color: #A5F708 !important;
+    color: black !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+
+
+
+
+}
+
+
+.addform {
+    --bs-btn-color: #fff!important;
+    --bs-btn-bg: #F708a5!important;
+    --bs-btn-border-color: #F708a5!important;
+    --bs-btn-hover-color: #fff!important;
+    --bs-btn-hover-bg: #F708a5!important;
+    --bs-btn-hover-border-color: #F708a5!important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253!important;
+    --bs-btn-active-color: #fff!important;
+    --bs-btn-active-bg: #F708a5!important;
+    --bs-btn-active-border-color: #F708a5!important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: ##F708a5;
+    --bs-btn-disabled-border-color: ##F708a5;
+    border-radius: 75% !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+
+.position-relative:hover .position-absolute {
+    visibility: visible !important;
+  }
+
+/* * {
+    background-color: #08A5F7 !important
+} */
+.inputctrl {
+    /* border-radius: 2%; */
+    border-color: black;
+    border-style: solid;
+}
+/* .btnsize {
+    font-size: x-large;
+} */
+.googlemapslink {
+    font-size: X-large;
+}
+.timeDuration {
+    
+    /* color:#F708a5; */
+    color: white;
+    /* padding-top: 30px;
+    margin-top: 30px; */
+    font-size: x-large;
+    /* margin-inline-start: 10px;
+    margin-block-start: 10em; */
+    text-align: start !important;
+
+}
+
+body {
+    background-color: #0AC1F5;
+    font-family: 'Lato', sans-serif; 
+}
+
+.topText{
+    font-size: medium;
+    text-align: center;
+}
+
+.autocomplete{
+    position: relative;
+    background-color: #F708a5;
+}
+
+
+.directionlist {
+    background-color: #E6F6FE
+
+}
+.startinput {
+    border-color:  black !important;
+    border-style: solid;
+}
+.main {
+    font-family: 'Lato', sans-serif; 
+}
+
+.pdfbutton {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #F708a5;
+    --bs-btn-border-color: #F708a5;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #F708a5;
+    --bs-btn-hover-border-color: #F708a5;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #F708a5;
+    --bs-btn-active-border-color: #F708a5;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: ##F708a5;
+    --bs-btn-disabled-border-color: ##F708a5; 
+    border-radius: 5% !important;
+    width: 130px;
+    height: 40px;
+    color: white;
+    white-space: nowrap !important;
+   font-weight: 500 !important;
+    display: flex;
+    /* align-items: start !important; */
+    font-family: 'Lato', sans-serif !important; 
+
+
+    text-align:left !important;
+    font-size:medium !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important; 
+}
+
+
+/* LANDING PAGE CSS */
+
+
+.landing-page {
+    height: 100vh; 
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /* vertically */
+    z-index: 5;
+  }
+  
+  /* Centered content */
+  .centered-content {
+    text-align: center;
+    z-index: 5;
+  }
+  
+  /* SVG image */
+  .logo {
+    width: auto; 
+    height: 95vh; 
+    z-index: 5;
+  }
+  
+  .proceed-button {
+    position: absolute; /* Position the button relative to its container */
+    bottom: 150px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index:3;
+  }
+  
+  
+  .proceed-button:hover {
+    background-color: #F708a5; 
+  }
+  
+  .whiteBackground{
+    z-index: 1;
+    height: 110vh;
+    width: 100vw;
+    background-color: #ffffff;
+    position: absolute;
+  }

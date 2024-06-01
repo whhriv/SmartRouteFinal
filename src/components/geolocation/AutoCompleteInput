@@ -1,0 +1,56 @@
+import React, { useState, useEffect } from 'react';
+import { FloatingLabel, Form } from 'react-bootstrap';
+
+const AutocompleteInput = (elementId) => {
+  const [start, setStart] = useState('');
+  const [autocomplete, setAutocomplete] = useState(null);
+
+  useEffect(() => {
+    // Load Google Maps Places library
+    const googleScript = document.createElement('script');
+    googleScript.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places`;
+    googleScript.async = true;
+    googleScript.onload = () => {
+      // Initialize autocomplete
+      const autocompleteInstance = new window.google.maps.places.Autocomplete(
+        document.getElementById('startInput')
+      );
+      setAutocomplete(autocompleteInstance);
+
+      // Listen for place selection
+      autocompleteInstance.addListener('place_changed', handlePlaceChanged);
+    };
+    document.body.appendChild(googleScript);
+
+    return () => {
+      // Clean up script tag
+      document.body.removeChild(googleScript);
+    };
+  }, []);
+
+  const handlePlaceChanged = () => {
+    const place = autocomplete.getPlace();
+    if (place && place.geometry && place.geometry.location) {
+      // Handle selected place
+      console.log('Selected place:', place);
+      setStart(place.formatted_address); // Update input value with formatted address
+    } else {
+      console.error('Invalid place. Please select a valid location from the suggestions.');
+    }
+  };
+
+  return (
+    <FloatingLabel className="ms-3 me-5 pe-2 pt-3 mb-5 flex-grow-1" controlId="start" label="Starting Point">
+      <Form.Control
+        id={elementId}
+        className="w-100"
+        type="text"
+        placeholder="Starting Point"
+        value={start}
+        onChange={(e) => setStart(e.target.value)}
+      />
+    </FloatingLabel>
+  );
+};
+
+export default AutocompleteInput;
